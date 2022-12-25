@@ -2,7 +2,7 @@
 
 const inputItem = document.querySelector('#font-size-control');
 const spanItem = document.querySelector('#text');
-
+spanItem.style.fontSize = inputItem.value + 'px';
 const changeFontSize = (Event) => {
     spanItem.style.fontSize = Event.currentTarget.value + 'px';
 };
